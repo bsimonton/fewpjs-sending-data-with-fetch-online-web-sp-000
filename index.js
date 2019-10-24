@@ -1,6 +1,8 @@
 // Add your code here
 
 function submitData(name, email){
+  
+  
   let configObj = {
     method: "POST",
     headers: {
@@ -12,6 +14,9 @@ function submitData(name, email){
       email: email
     })
   }
+  
+
+  
 
   return fetch("http://localhost:3000/users", configObj)
     .then(function(response) {
